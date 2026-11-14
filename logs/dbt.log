@@ -1,0 +1,57 @@
+==================== 2026-11-14T07:03:49.299821Z | 01a1d8de-991f-73f1-b298-3ca5ef296235 ====================
+07:03:49.301447 [info ]: Installing dbt project and profile setup
+07:03:49.357289 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+07:03:49.363487 [info ]: Success Project created successfully!
+07:03:49.364053 [info ]: Info Project name: jaffle_shop
+07:03:49.364258 [info ]: Info Project directory: jaffle_shop
+07:03:49.365858 [info ]: Info Setting up your profile...
+07:03:49.369778 [info ]: Info Creating new profile...
+==================== 2026-11-14T08:00:11.371089Z | 01a1d912-3467-7392-a20b-75a0a69b363c ====================
+08:00:11.371399 [info ]: Installing dbt project and profile setup
+08:00:11.376269 [info ]: Warning Directory 'jaffle_shop' already exists, using 'jaffle_shop_1' instead
+08:00:11.395945 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+08:00:11.396134 [info ]: Success Project created successfully!
+08:00:11.396272 [info ]: Info Project name: jaffle_shop_1
+08:00:11.396367 [info ]: Info Project directory: jaffle_shop_1
+08:00:11.396541 [info ]: Info Setting up your profile...
+08:00:11.396920 [info ]: Info Creating new profile...
+==================== 2026-11-14T08:11:04.435098Z | 01a1d91c-2b71-7f21-8481-3f711633fdb4 ====================
+08:11:04.435297 [info ]: Installing dbt project and profile setup
+08:11:04.437749 [info ]: Warning Directory 'jaffle_shop' already exists, using 'jaffle_shop_2' instead
+08:11:04.455360 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+08:11:04.455561 [info ]: Success Project created successfully!
+08:11:04.455764 [info ]: Info Project name: jaffle_shop_2
+08:11:04.455897 [info ]: Info Project directory: jaffle_shop_2
+08:11:04.456149 [info ]: Info Setting up your profile...
+08:11:04.456447 [info ]: Info Creating new profile...
+08:15:45.954588 [info ]: Success Profile written to C:\Users\BigOh-Sohail\.dbt\profiles.yml
+08:15:45.954897 [info ]: Validating profile inputs, adapters, and connection
+
+08:15:45.955180 [info ]: dbt 2.0.11
+08:15:45.955868 [info ]: Started loading project
+08:15:45.959648 [info ]: Loading ~/.dbt/profiles.yml
+08:15:45.961454 [info ]: Finished loading project [  0.01s]
+08:15:45.961809 [info ]: Started debugging
+08:15:45.961942 [info ]: Debugging profile: dev
+08:15:45.962228 [info ]: Debugging dbt version: 2.0.11
+08:15:45.962414 [info ]: Debugging platform: windows x86_64 (windows)
+08:15:45.962617 [info ]: Debugging adapter type: databricks (remote)
+08:15:46.038068 [info ]: Debugging dependencies:
+  git: OK
+08:15:46.038619 [info ]: Debugging connection:
+  "schema": "default",
+  "host": "dbc-0ca7a368-f193.cloud.databricks.com",
+  "http_path": "/sql/1.0/warehouses/eb2060e894837ae5"
+08:15:46.039599 [debug]: Databricks driver resolved: databricks 0.21.0.dev+dbt0.21.15
+08:15:46.131859 [info ]: Debugging connection test: ERROR
+08:15:46.132546 [info ]: Finished debugging [  0.17s]
+08:15:46.133125 [error]: [AuthenticationFailed (dbt1011)]: dbt was unable to connect to the database configured for the `databricks` adapter.
+The following error was returned:
+
+HTTP error: io: An existing connection was forcibly closed by the remote host. (os error 10054)
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/core/connect-data-platform/connection-profiles
+08:15:46.373762 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [4m 42s]

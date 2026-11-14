@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: bronze_customer
+    description: "Customer data from dbt-ansh-catalog.source.dim_customer."
+
+  - name: bronze_date
+    description: "Date data from dbt-ansh-catalog.source.dim_date."
+
+  - name: bronze_product
+    description: "Product data from dbt-ansh-catalog.source.dim_product."
+
+  - name: bronze_returns
+    description: "Return data from dbt-ansh-catalog.source.fact_returns."
+
+  - name: bronze_sales
+    description: "Sales data from dbt-ansh-catalog.source.fact_sales."
